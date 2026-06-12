@@ -1,10 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-import Title from './title'
-import Body from './body'
+import ChatBox from './ChatBox'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,8 +9,7 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <Title />
-          <Body />
+          <ChatBox />
         </header>
       </div>
     </>
