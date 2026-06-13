@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import ChatBox from './ChatBox'
+import Product, { phoneData } from './Product'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,9 +8,14 @@ function App() {
   return (
     <>
       <div className="App">
-        <header className="App-header">
-          <ChatBox />
-        </header>
+        {phoneData.map((phone, id) => (
+          <Product
+            key={id}
+            name={phone.name}
+            price={phone.price}
+            discount={phone.discount} 
+          />
+        ))}
       </div>
     </>
   )
