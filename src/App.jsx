@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import Product, { phoneData } from './Product'
 import FootBall from './Event'
 
 function App() {
