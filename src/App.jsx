@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Product, { phoneData } from './Product'
+import FootBall from './Event'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,14 +9,7 @@ function App() {
   return (
     <>
       <div className="App">
-        {phoneData.map((phone, id) => (
-          <Product
-            key={id}
-            name={phone.name}
-            price={phone.price}
-            discount={phone.discount} 
-          />
-        ))}
+        <FootBall />
       </div>
     </>
   )
