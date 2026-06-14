@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import FootBall from './Event'
+import Goal from './conditional'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <FootBall />
+        <Goal isGoal = {false} />
       </div>
     </>
   )
