@@ -1,8 +1,13 @@
-import './App.css'
-import FavColor from './pages/FavColor'
+import Counter from './pages/Counter'
+import Timers from './pages/Timers'
 
 function App() {
-  return <FavColor />
+  return (
+    <>
+      <Timers />
+      <Counter />
+    </>
+  );
 }
 
 export default App
