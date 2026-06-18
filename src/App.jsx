@@ -1,11 +1,10 @@
-import Counter from './pages/Counter'
-import Timers from './pages/Timers'
+import MyForm from "./pages/Form";
+
 
 function App() {
   return (
     <>
-      <Timers />
-      <Counter />
+      <MyForm />
     </>
   );
 }
